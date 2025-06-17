@@ -25,4 +25,11 @@
         android:text="Объединить строки"
         android:layout_marginTop="16dp" />
 
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
 </LinearLayout>
