@@ -14,16 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val frirstStringInput = findViewById<EditText>(R.id.firstStringInput)
+        val firstStringInput = findViewById<EditText>(R.id.firstStringInput)
         val secondStringInput = findViewById<EditText>(R.id.secondStringInput)
         val concatButton = findViewById<Button>(R.id.concatButton)
         val resultTextView = findViewById<TextView>(R.id.resultTextView)
         concatButton.setOnClickListener {
-            val firstString = frirstStringInput.text.toString()
+            val firstString = firstStringInput.text.toString()
             val secondString = secondStringInput.text.toString()
 
             // Дозаписываем вторую строку в конец первой
-            val combinedString = frirstString + secondString
+            val combinedString = firstString + secondString
 
             resultTextView.text = "Результат: $combinedString"
         }
